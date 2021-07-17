@@ -115,7 +115,7 @@ img {
 
 .hero__title-section {
   width: 46%;
-  margin-top: 50%;
+  margin-top: 25%;
 }
 @media screen and (max-width: 768px) {
   .hero__title-section {
@@ -272,7 +272,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30%;
+  margin-top: 25%;
 }
 
 .features__item {
