@@ -1,11 +1,22 @@
+html {
+    font-size: $baseFontSize;
+
+    @include tablets {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include phones {
+        font-size: $baseFontSize - 2px;
+    }
+}
+
 body, html {
     height: 100%;
 }
 
 body {
     position: relative;
-    margin: 0px;
-    font-size: $baseFontSize;
+    margin: rem(0px);
     line-height: 1.42;
     font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -16,25 +27,25 @@ body {
 .wrapper {
     position: relative;
     width: 100%;
-    min-width: $SiteWidth + 20px;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container{
-    width: 940px; 
+    width: 95%;
+    max-width: $SiteWidth; 
     margin-left: auto;
     margin-right: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0px;
+    margin: rem(0px);
     font-weight: normal;
 }
 
 ul {
-    padding: 0px;
-    margin: 0px;
+    padding: rem(0px);
+    margin: rem(0px);
     
     li {
         list-style: none;
@@ -42,8 +53,8 @@ ul {
 }
 
 p {
-    margin: 0px;
-    padding: 0px;
+    margin: rem(0px);
+    padding: rem(0px);
 }
 
 * {
@@ -58,9 +69,3 @@ img {
     display: block;
     max-width: 100%;
 }
-
-footer {
-    position: relative;
-    width: 100%;
-}
-

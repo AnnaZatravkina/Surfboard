@@ -1,10 +1,15 @@
 .hero {
     height: 100vh;
-    min-height: 652px;
+    min-height: rem(652px);
     color: $white;
     font-weight: 700;
     background: url(../img/main.jpg) center top no-repeat;
     background-size: cover;
+
+    @include tablets {
+        min-height: rem(1000px);
+        background: url(../img/maintablets.jpg);
+    }
 }
 
 .hero__container {
@@ -12,24 +17,48 @@
     flex-direction: column;
     justify-content: space-between;
     height: 95%;
-    padding: 24px 0px 70px;
+    padding: rem(24px) rem(0px) rem(70px);
+
+    @include tablets {
+        height: 80%;
+    }
 }
 
 .hero__title-section {
     width: 46%;
+
+    @include tablets {
+        width: 97%;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .hero__main-title {
-    font-size: 48px;
+    font-size: rem(48px);
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
     text-transform: uppercase;
+
+    @include tablets {
+        margin-top: 35%;
+    }
 }
 
 .hero__title-desc {
-    font-size: 21px;
+    font-size: rem(21px);
     font-weight: normal;
-    margin-bottom: 39px;
+    margin-bottom: rem(39px);
     padding-right: 10%;
+}
+
+.hero__icons-section {
+    @include tablets {
+        display: none;
+    }
 }

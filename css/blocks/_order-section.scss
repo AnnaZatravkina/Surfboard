@@ -1,6 +1,14 @@
 .order-section {
-    background: url("../img/page4.jpg");
+    background: url(../img/page4.jpg);
     background-size: cover;
+
+    @include tablets {
+        content: url("../img/page4tablets.jpg");
+    }
+
+    @include phones {
+        content: url("../img/page4phone.jpg");
+    }
 }
 
 .order-section__title {
