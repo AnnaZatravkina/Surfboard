@@ -7,8 +7,13 @@
     background-size: cover;
 
     @include tablets {
-        min-height: rem(1000px);
+        max-height: rem(908px);
         background: url(../img/maintablets.jpg);
+        background-size: cover;
+    }
+
+    @include phones {
+        max-height: rem(800px);
     }
 }
 
@@ -26,6 +31,7 @@
 
 .hero__title-section {
     width: 46%;
+    margin-top: 50%;
 
     @include tablets {
         width: 97%;
@@ -35,6 +41,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 12%;
+    }
+
+    @include phones {
+        margin-top: 20%;
     }
 }
 

@@ -1,3 +1,11 @@
+.fill {
+    @include tablets {
+        position: relative;
+        background: #1968B1;
+        max-height: 91px;
+    }
+}
+
 .header {
     display: flex;
     align-items: flex-start;
@@ -39,6 +47,10 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .header__phone-number {

@@ -82,8 +82,14 @@ img {
 }
 @media screen and (max-width: 768px) {
   .hero {
-    min-height: 55.5555555556rem;
+    max-height: 50.4444444444rem;
     background: url(../img/maintablets.jpg);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    max-height: 44.4444444444rem;
   }
 }
 
@@ -109,6 +115,7 @@ img {
 
 .hero__title-section {
   width: 46%;
+  margin-top: 50%;
 }
 @media screen and (max-width: 768px) {
   .hero__title-section {
@@ -130,6 +137,12 @@ img {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin-top: 12%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title-section {
+    margin-top: 20%;
   }
 }
 
@@ -156,6 +169,14 @@ img {
 @media screen and (max-width: 768px) {
   .hero__icons-section {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fill {
+    position: relative;
+    background: #1968B1;
+    max-height: 91px;
   }
 }
 
@@ -218,6 +239,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 480px) {
+  .phone-number {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .header__phone-number {
@@ -244,6 +272,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 30%;
 }
 
 .features__item {
@@ -313,13 +342,12 @@ img {
 }
 @media screen and (max-width: 768px) {
   .section {
-    min-height: 55.5555555556rem;
-    margin-top: 11.1111111111rem;
+    max-height: 50.4444444444rem;
   }
 }
 @media screen and (max-width: 480px) {
   .section {
-    min-height: 39.4444444444rem;
+    max-height: 44.4444444444rem;
     margin-top: 2.8888888889rem;
   }
 }
@@ -633,16 +661,6 @@ img {
   background: url(../img/page4.jpg);
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
-  .order-section {
-    content: url("../img/page4tablets.jpg");
-  }
-}
-@media screen and (max-width: 480px) {
-  .order-section {
-    content: url("../img/page4phone.jpg");
-  }
-}
 
 .order-section__title {
   color: #fff;
@@ -690,6 +708,11 @@ img {
   display: flex;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 480px) {
+  .form__row {
+    margin-bottom: 1.4444444444rem;
+  }
+}
 
 .form__block {
   -webkit-box-flex: 1;
@@ -715,6 +738,11 @@ img {
 .form__input:focus {
   border-color: #FEDB3F;
   outline: none;
+}
+@media screen and (max-width: 480px) {
+  .form__input {
+    max-height: 4.5555555556rem;
+  }
 }
 
 .form__controls {
@@ -744,6 +772,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .form__btns {
+    margin-top: 2.1666666667rem;
+  }
 }
 
 .radio {
@@ -889,12 +922,17 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  top: 8%;
+  right: 5%;
+  z-index: 50;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    top: 2%;
   }
 }
 
@@ -963,6 +1001,11 @@ footer {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .socials {
+    margin-left: 0rem;
+  }
 }
 
 .socials__item {

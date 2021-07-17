@@ -3,6 +3,10 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
+
+    @include phones {
+        margin-left: rem(0px);
+    }
 }
 
 .socials__item {
