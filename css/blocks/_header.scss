@@ -1,15 +1,31 @@
-.fill {
-    @include tablets {
-        position: relative;
-        background: #1968B1;
-        max-height: 91px;
-    }
-}
-
 .header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    position: absolute;
+    padding-top: rem(24px);
+    padding-bottom: rem(28px);
+
+    @include tablets {
+        padding: rem(26px) rem(0px) rem(24px);
+        background: #1968B1;
+        position: relative;
+    }
+}
+
+.header__container {
+    padding-right: rem(0px);
+    padding-left: rem(0px);
+    display: flex;
+    
+    @include tablets {
+        padding-left: rem(30px);
+    }
+
+    @include phones {
+        padding-left: rem(10px);
+    }
+
 }
 
 .menu {

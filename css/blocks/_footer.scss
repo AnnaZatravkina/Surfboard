@@ -5,6 +5,11 @@ footer {
     right: 0;
     background: $white;
     padding:rem(23px) 0;
+
+    @include tablets {
+        padding-left: rem(30px);
+        padding-right: rem(44px);
+    }
 }
 
 .footer__container {

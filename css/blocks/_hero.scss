@@ -5,16 +5,6 @@
     font-weight: 700;
     background: url(../img/main.jpg) center top no-repeat;
     background-size: cover;
-
-    @include tablets {
-        max-height: rem(908px);
-        background: url(../img/maintablets.jpg);
-        background-size: cover;
-    }
-
-    @include phones {
-        max-height: rem(800px);
-    }
 }
 
 .hero__container {
@@ -22,7 +12,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 95%;
-    padding: rem(24px) rem(0px) rem(70px);
 
     @include tablets {
         height: 80%;
@@ -34,7 +23,7 @@
     margin-top: 25%;
 
     @include tablets {
-        width: 97%;
+        width: 100%;
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -58,6 +47,7 @@
 
     @include tablets {
         margin-top: 35%;
+        width: 85%;
     }
 }
 
@@ -66,6 +56,10 @@
     font-weight: normal;
     margin-bottom: rem(39px);
     padding-right: 10%;
+
+    @include tablets {
+        padding-right: 0%;
+    }
 }
 
 .hero__icons-section {
