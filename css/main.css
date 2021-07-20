@@ -700,7 +700,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .form {
-    padding: 0;
+    padding: 0 5%;
   }
 }
 
