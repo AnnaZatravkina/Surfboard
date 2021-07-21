@@ -15,6 +15,7 @@
 
     @include phones {
         padding-right: rem(12px);
+        padding-left: rem(10px);
     }
 }
 
@@ -36,8 +37,14 @@
 }
 
 .benefit__icon {
-    width: rem(68px);
-    height: rem(68px);
+    width: rem(70px);
+    height: rem(74px);
+}
+
+.benefit__text {
+    @include phones {
+        padding-right: rem(40px);
+    }
 }
 
 .benefit__title {
@@ -45,6 +52,10 @@
     font-weight: 700;
     color: $black;
     margin-bottom: rem(20px);
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
 }
 
 .benefit__desc {

@@ -28,6 +28,10 @@
         right: 53%;
     }
 
+    @include tablets {
+        display: none;
+    }
+    
     @include phones {
         display: none;   
     }

@@ -450,6 +450,7 @@ img {
 @media screen and (max-width: 480px) {
   .benefit__image {
     padding-right: 0.6666666667rem;
+    padding-left: 0.5555555556rem;
   }
 }
 
@@ -477,8 +478,14 @@ img {
 }
 
 .benefit__icon {
-  width: 3.7777777778rem;
-  height: 3.7777777778rem;
+  width: 3.8888888889rem;
+  height: 4.1111111111rem;
+}
+
+@media screen and (max-width: 480px) {
+  .benefit__text {
+    padding-right: 2.2222222222rem;
+  }
 }
 
 .benefit__title {
@@ -486,6 +493,11 @@ img {
   font-weight: 700;
   color: #292929;
   margin-bottom: 1.1111111111rem;
+}
+@media screen and (max-width: 480px) {
+  .benefit__title {
+    margin-bottom: 0.5555555556rem;
+  }
 }
 
 .benefit__desc {
@@ -922,6 +934,11 @@ img {
 }
 .dots--right {
   right: 53%;
+}
+@media screen and (max-width: 768px) {
+  .dots {
+    display: none;
+  }
 }
 @media screen and (max-width: 480px) {
   .dots {
