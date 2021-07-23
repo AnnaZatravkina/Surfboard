@@ -1101,7 +1101,7 @@ footer {
 }
 
 .product__image {
-  background: url("../../img/greyspot.png") center center no-repeat;
+  background: url("../img/greyspot.png") center center no-repeat;
   width: 22rem;
   height: 21rem;
 }
@@ -1292,11 +1292,11 @@ footer {
 }
 
 .product-slider__arrow--direction--prev {
-  background: url("../../img/prevarrow.png") center center no-repeat;
+  background: url("../img/prevarrow.png") center center no-repeat;
   padding: 17.1111111111rem 3.3333333333rem;
 }
 
 .product-slider__arrow--direction--next {
-  background: url("../../img/nextarrow.png") center center no-repeat;
+  background: url("../img/nextarrow.png") center center no-repeat;
   padding: 17.1111111111rem 3.3333333333rem;
 }
