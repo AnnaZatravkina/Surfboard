@@ -1,0 +1,21 @@
+.product-slider__arrows {
+    display: flex;
+    width: rem(13px);
+    height: rem(27px);
+}
+
+.product-slider__arrow {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-slider__arrow--direction--prev {
+    background: url("../../img/prevarrow.png") center center no-repeat;
+    padding: rem(308px) rem(60px);
+}
+
+.product-slider__arrow--direction--next {
+    background: url("../../img/nextarrow.png") center center no-repeat;
+    padding: rem(308px) rem(60px);
+}
