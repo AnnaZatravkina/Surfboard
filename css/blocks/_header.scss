@@ -37,19 +37,40 @@
     }
 }
 
+.menu--vertical {
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    text-align: center;
+
+    @include tablets {
+        display: block;
+    }
+}
+
 .menu__list {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .menu__item {
     margin-right: rem(22px);
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 
     &:last-child {
         margin-right: rem(0px);
+    }
+
+    @include tablets {
+        margin-right: rem(0px);
+        font-size: rem(36px);
+        line-height: rem(72px);
     }
 }
 

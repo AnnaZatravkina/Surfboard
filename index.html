@@ -170,10 +170,9 @@
                                         <div class="product__parameters">
                                             <div class="product__parameters-block">
                                                 <img src="./img/arrows.png" alt="arrows" class="product__parameters-img">                                               
-                                                <a href="#" class="product__link">Параметры</a> 
-                                            </div>                                            
-                                            <div class="parameters__drop">
-                                                <ul class="parameters__list">
+                                                <a href="#" class="product__link">Параметры</a>
+                                                <div class="parameters__drop">
+                                                    <ul class="parameters__list">
                                                     <li class="parameters__item">
                                                         <div class="parameters__icon">
                                                             <img src="./img/length.png" alt="length" class="parameters__icon-elem">
@@ -190,7 +189,7 @@
                                                     </li>
                                                     <li class="parameters__item">
                                                         <div class="parameters__icon">
-                                                            <img src="#" alt="thick" class="parameters__icon-elem">
+                                                            <img src="./img/thickness.png" alt="thickness" class="parameters__icon-elem">
                                                         </div>
                                                         <div class="parameters__text">Толщина</div>
                                                         <div class="parameters__value">8 см</div>
@@ -209,7 +208,8 @@
                                                         <div class="parameters__text">Вес</div>
                                                         <div class="parameters__value">7-8 кг</div>
                                                     </li>
-                                                </ul>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                         <h2 class="product__title">Лонгборд 2.0</h2>
@@ -232,8 +232,8 @@
                                             </div>
                                         </div>
                                         <div class="product__price">
-                                            <div class="product__price-text">7000 ₽</div>
-                                            <a href="#" class="btn btn--color--yellow">Заказать</a>
+                                            <div class="product__price-text">7000 ₽</div>                                            
+                                            <input type="submit" value="Заказать" class="btn btn--color--yellow">
                                         </div>
                                     </div>
                                 </div>
@@ -412,19 +412,22 @@
         <span class="hamburger__plank"></span>
         <span class="hamburger__plank"></span>
     </a>
-    <nav class="fixed-menu">
-        <ul class="fixed-menu__list">
-            <li class="fixed-menu__item fixed-menu__item--active"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
-            <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
+    <div class="fullscreen-menu">
+        <a href="" class="fullscreen-menu__close">
+            <img src="./img/cross.png" alt="cross" class="fullscreen-menu__close-img">
+        </a>
+        <nav class="menu menu--vertical">
+            <ul class="menu__list">
+            <li class="menu__item"> <a href="#" class="menu__link">О нас</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Серфборды</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Команда</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Меню</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Как мы работаем</a> </li>
+            <li class="menu__item"> <a href="#" class="menu__link">Контакты</a> </li>
         </ul>
-    </nav>
+        </nav>
+    </div>
     <script src="./string-filtering.js"></script>
     <script src="./object-selection.js"></script>
     <script src="./string-analysing.js"></script>

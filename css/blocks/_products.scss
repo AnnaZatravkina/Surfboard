@@ -4,4 +4,8 @@
 
 .products__item {
     padding-left: rem(69px);
+
+    @include phones {
+        padding-left: rem(13px);
+    }    
 }

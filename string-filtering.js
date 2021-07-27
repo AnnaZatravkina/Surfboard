@@ -11,8 +11,6 @@ const getVowels = stringToFilter => {
         if (vowels.includes(currentLetter)) {
             extractedVowels += currentLetter;
         }
-        
-        console.log(currentLetter);
     }
 
     return extractedVowels;

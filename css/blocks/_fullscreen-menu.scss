@@ -1,0 +1,32 @@
+.fullscreen-menu {
+    @include tablets {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        background: #313131;
+        z-index: 1000;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.fullscreen-menu__close {
+    @include tablets {
+        position: absolute;
+        width: rem(20px);
+        height: rem(20px);
+        cursor: pointer;
+    }
+}
+
+.fullscreen-menu__close-img {
+    @include tablets {
+        width: 100%;
+        height: 100%;
+    } 
+}

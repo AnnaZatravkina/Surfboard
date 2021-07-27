@@ -1,6 +1,12 @@
 .product__container {
     display: flex;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 .product__col {
@@ -12,12 +18,20 @@
     &:last-child {
         padding-right: rem(0px);  
     }
+
+    @include tablets {
+        width: rem(528px);
+        height: rem(417px);
+    }
 }
 
 .product__image {
     background: url("../img/greyspot.png") center center no-repeat;
-    width: rem(396px);
-    height: rem(378px);
+
+    @include tablets {
+        margin-top: rem(108px);
+    }
+
 }
 
 .product__col-img {
@@ -27,18 +41,32 @@
 }
 
 .product__parameters {
-    display: flex;
     height: rem(91px);
     width: rem(91px);
     margin-bottom: rem(52px);
+    position: relative;
+
+    @include tablets {
+        display: none;
+        height: rem(0px);
+        width: rem(0px);
+        margin-bottom: rem(0px);    
+    }
 }
 
 .product__parameters-block {
+    position: relative;
     background: $darkblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: rem(4px);
+
+    &:hover .parameters__drop {
+        opacity: 0.8;
+        display: block;
+    }
 }
 
 .product__parameters-img {
@@ -61,15 +89,37 @@
     color: $black;
     text-transform: uppercase;
     margin-bottom: rem(24px);
+
+    @include tablets {
+        margin-bottom: rem(14px);
+    }
 }
 
 .product__text {
     margin-bottom: rem(52px);
     padding-right: rem(34px);
+
+    @include tablets {
+        margin-bottom: rem(24px);
+        padding-right: rem(0px);
+    }
+
+    @include phones {
+        padding: rem(0px) rem(75px);
+        margin-bottom: rem(22px);
+    }
 }
 
 .product__content {
     margin-bottom: rem(12px);
+
+    @include tablets {
+        padding-left: rem(130px);
+    }
+
+    @include phones {
+        padding-left: rem(135px);
+    }
 }
 
 .product__content-item {
@@ -85,12 +135,25 @@
     padding-right: rem(52px);
 }
 
-.product__parameters {
-    position: relative;
+.product__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: rem(55px);
+
+    @include phones {
+        padding-right: rem(10px);
+    }
 }
 
 .product__price-text {
     font-size: rem(60px);
     font-weight: 300;
     color: #151515;
+    flex: 1;
+
+    @include tablets {
+        padding-right: rem(42px);
+        flex: none;
+    }
 }
